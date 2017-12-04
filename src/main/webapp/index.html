@@ -1,0 +1,54 @@
+<! DOCTYPE html>
+<html>
+
+<head>
+  <meta lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="img/logo.jpg">
+
+  <title>Notes</title>
+
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <div class="page-wrapper-header">
+      <header class="header bar">
+        <p class="header-user-name">Anonymous</p>
+        <img class="header-user-photo" src="img/user_ava.gif" alt="User">
+      </header>
+    </div>
+
+    <div class="page-wrapper-content">
+      <section class="note-create">
+        <h2>Add new note</h2>
+        <input class="note-create-title" type="text" placeholder="Enter title...">
+        <input class="note-create-description" type="text" placeholder="Enter description...">
+        <div class="note-create-tool">
+          <input class="note-create-tool-color" type="color" value="#abce6b" >
+          <button class="note-create-tool-save button">Save</button>
+        </div>
+      </section>
+      <section class="note-list"></section>
+    </div>
+
+    <div class="page-wrapper-footer">
+      <footer class="footer bar">
+        <small class="copyright">Copyright &copy; 2017 All rights reserved</small>
+      </footer>
+    </div>
+  </div>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

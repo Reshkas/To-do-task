@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.page-wrapper {
+  min-width: 320px;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #c3c3c3
+}
+
+.page-wrapper-header {
+  width: 100%;
+  background-color: #efc047
+}
+
+.bar {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.header {
+  flex-direction: row-reverse;
+  padding: 0 20px;
+}
+
+.header-user-photo {
+  width: 40px;
+  height: auto;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.page-wrapper-content {
+  padding: 0 10px;
+  flex-grow: 1;
+}
+
+.note-create {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  background-color: #f1f1f1;
+  border-radius: 3px;
+}
+
+.note-create > h2 {
+  margin: 5px;
+  text-align: center;
+  color: #5a5b56;
+}
+
+.note-create > input {
+  margin: 5px 15px;
+  border: 0;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.note-create-tool {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+}
+
+.note-create-tool-color {
+  border: 0;
+  border-radius: 2px;
+}
+
+.note-create-tool-save {
+  background-color: #f1f1f1;
+}
+
+.note-list {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.note-list-item {
+  flex-basis: 250px;
+  align-self: flex-start;
+  padding: 5px 10px;
+  margin: 7px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.note-list-item-title {
+  margin: 5px 10px;
+  text-align: center;
+  flex-basis: 35px;
+}
+
+.note-list-item-description {
+  margin-top: 0;
+  flex-grow: 1;
+}
+
+.note-list-item-edit {
+  flex-basis: 35px;
+  align-self: flex-end;
+  display: none;
+}
+
+.footer {
+  height: 40px;
+}
+
+.button {
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  color: #5a5b56;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-active {
+  display: block;
+}

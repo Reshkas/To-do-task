@@ -1,0 +1,46 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <context-param>
+        <param-name>db.driver</param-name>
+        <param-value>org.h2.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.url</param-name>
+        <param-value>jdbc:h2:mem:notesdb;DB_CLOSE_DELAY=-1;</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.user</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.pass</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.init</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.feed</param-name>
+        <param-value>
+            /WEB-INF/db/init.sql,/WEB-INF/db/feed.sql
+        </param-value>
+    </context-param>
+
+    <!--<servlet>-->
+        <!--<servlet-name>Notes</servlet-name>-->
+        <!--<servlet-class>notes.controller.NoteController</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Notes</servlet-name>-->
+        <!--<url-pattern>/</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
